@@ -34,7 +34,9 @@ export default function BasicMeta({
         }
       />
       {author ? <meta name="author" content={author} /> : null}
-      <Link rel="canonical" href={config.base_url + url} />
+      <Link rel="canonical" href={config.base_url + url}>
+        asdf
+      </Link>
     </Head>
   );
 }
