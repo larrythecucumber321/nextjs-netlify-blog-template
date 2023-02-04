@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import config from "../../lib/config";
 
 type Props = {
@@ -33,7 +34,7 @@ export default function BasicMeta({
         }
       />
       {author ? <meta name="author" content={author} /> : null}
-      <link rel="canonical" href={config.base_url + url} />
+      <Link rel="canonical" href={config.base_url + url} />
     </Head>
   );
 }
